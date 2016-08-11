@@ -1,11 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Прогноз погоды</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="wrapper">
+            <header class="header row">
+                <a href="#" class="col-sm-1">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <a href="#" class="col-sm-11">
+                    <h1> Weather.com </h1>
+                </a>
+            </header>
+            <nav class="navigation row">
+                <ul class="nav">
+                    <li class="nav-item col-lg-1 col-md-2 col-sm-2">
+                        <a href="#">Сегодня</a>
+                    </li>
+                    <li class="nav-item col-lg-1 col-md-2 col-sm-2">
+                        <a href="#">Завтра</a>
+                    </li>
+                    <li class="nav-item col-lg-1 col-md-2 col-sm-2">
+                        <a href="#">3 дня</a>
+                    </li>
+                    <li class="nav-item col-lg-1 col-md-2 col-sm-2">
+                        <a href="#">Неделя</a>
+                    </li>
+                    <li class="nav-item col-lg-1 col-md-2 col-sm-2">
+                        <a href="#">Месяц</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="row main">
+                <h2>Погода на сегодня</h2>
+                <div class="weather-container">
+                    <div class="current weather col-lg-3 col-md-3 col-sm-3">
+                        <h3>Погода сейчас</h3>
+                        <img class="weather-img " src="images/rain.png" alt="weather">
+                        <dl class="weather-info">
+                            <dt>Температура: </dt><dd> +20°C</dd>
+                            <dt>По ощущению: </dt><dd> +20°C</dd>
+                            <dt>Температура воды: </dt><dd> +20°C</dd>
+                            <dt>Ветер: </dt><dd> 2 м/с, СЗ</dd>
+                            <dt>Давление: </dt><dd> 740 мм рт. ст.</dd>
+                            <dt>Влажность: </dt><dd> 95%</dd>
+                        </dl>
+                    </div>
+
+                    <div class="morning weather col-lg-3 col-md-3 col-sm-3">
+                        <h3>Погода утром</h3>
+                        <img class="weather-img" src="images/sun.png" alt="weather">
+                        <dl class="weather-info">
+                            <dt>Температура: </dt><dd> +20°C</dd>
+                            <dt>Давление: </dt><dd> 740 мм рт. ст.</dd>
+                            <dt>Влажность: </dt><dd> 95%</dd>
+                        </dl>
+                    </div>
+
+                    <div class="afternoon weather col-lg-3 col-md-3 col-sm-3">
+                        <h3>Погода днём</h3>
+                        <img class="weather-img" src="images/cloud.png" alt="weather">
+                        <dl class="weather-info">
+                            <dt>Температура: </dt><dd> +20°C</dd>
+                            <dt>Давление: </dt><dd> 740 мм рт. ст.</dd>
+                            <dt>Влажность: </dt><dd> 95%</dd>
+                        </dl>
+                    </div>
+                    <div class="evening weather col-lg-3 col-md-3 col-sm-3">
+                        <h3>Погода вечером</h3>
+                        <img class="weather-img" src="images/rain.png" alt="weather">
+                        <dl class="weather-info">
+                            <dt>Температура: </dt><dd> +20°C</dd>
+                            <dt>Давление: </dt><dd> 740 мм рт. ст.</dd>
+                            <dt>Влажность: </dt><dd> 95%</dd>
+                        </dl>
+                        <dl class="weather-info">
+                            <dt>Температура: </dt><dd> +20°C</dd>
+                            <dt>Давление: </dt><dd> 740 мм рт. ст.</dd>
+                            <dt>Влажность: </dt><dd> 95%</dd>
+                        </dl>
+                    </div>
+                </div>
+            </main>
+            <div class="hFooter"></div>
+        </div>
+        <footer class="footer row">
+            <p class="copyright">© 2005-2016 Weather.com</p>
+        </footer>
+    </div>
 
 </body>
 </html>
