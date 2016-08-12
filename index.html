@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Прогноз погоды</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="wrapper">
-            <header class="header row">
+            <header class="header row" role="banner">
                 <a href="#" class="col-sm-1">
                     <img src="images/logo.png" alt="logo">
                 </a>
@@ -17,7 +18,7 @@
                     <h1> Weather.com </h1>
                 </a>
             </header>
-            <nav class="navigation row">
+            <nav class="navigation row" role="navigation">
                 <ul class="nav">
                     <li class="nav-item col-lg-1 col-md-2 col-sm-2">
                         <a href="#">Сегодня</a>
@@ -36,10 +37,10 @@
                     </li>
                 </ul>
             </nav>
-            <main class="row main">
+            <main class="row main" role="main">
                 <h2>Погода на сегодня</h2>
-                <div class="weather-container">
-                    <div class="current weather col-lg-3 col-md-3 col-sm-3">
+                <div class="weather-container" data-style="display: flex;">
+                    <div class="current weather col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <h3>Погода сейчас</h3>
                         <img class="weather-img " src="images/rain.png" alt="weather">
                         <dl class="weather-info">
@@ -52,7 +53,7 @@
                         </dl>
                     </div>
 
-                    <div class="morning weather col-lg-3 col-md-3 col-sm-3">
+                    <div class="morning weather col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <h3>Погода утром</h3>
                         <img class="weather-img" src="images/sun.png" alt="weather">
                         <dl class="weather-info">
@@ -62,7 +63,7 @@
                         </dl>
                     </div>
 
-                    <div class="afternoon weather col-lg-3 col-md-3 col-sm-3">
+                    <div class="afternoon weather col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <h3>Погода днём</h3>
                         <img class="weather-img" src="images/cloud.png" alt="weather">
                         <dl class="weather-info">
@@ -71,7 +72,7 @@
                             <dt>Влажность: </dt><dd> 95%</dd>
                         </dl>
                     </div>
-                    <div class="evening weather col-lg-3 col-md-3 col-sm-3">
+                    <div class="evening weather col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <h3>Погода вечером</h3>
                         <img class="weather-img" src="images/rain.png" alt="weather">
                         <dl class="weather-info">
@@ -89,10 +90,9 @@
             </main>
             <div class="hFooter"></div>
         </div>
-        <footer class="footer row">
-            <p class="copyright">© 2005-2016 Weather.com</p>
+        <footer class="footer row" role="contentinfo">
+            <a href="#" class="copyright">© 2005-2016 Weather.com</a>
         </footer>
     </div>
-
 </body>
 </html>
